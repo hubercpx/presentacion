@@ -1494,7 +1494,7 @@
                         Ingreso de Productos
                       </div>
                       <div class="form-group">
-                        <div class="form-group col-sm-5">
+                        <div class="form-group col-sm-12">
                           <label for="">Fabricante</label><select class="form-control">
                                 <option>
                                   Equipo de Instalación
@@ -1554,21 +1554,24 @@
             </select>
                       </div>
                       <div class="form-group">
-                        <label for=""> Multiselect</label><select class="form-control select2" multiple="true">
+                        <label for=""> Sub-Categorias</label><select class="form-control select2" multiple="true">
               <option selected="true">
-                New York
+
               </option>
               <option selected="true">
-                California
+                Equipo de Trabajo
               </option>
               <option>
-                Boston
+                Equipo Externo
               </option>
               <option>
-                Texas
+                Equipo Interno
               </option>
               <option>
-                Colorado
+                Consumibles
+              </option>
+              <option>
+                Exhibición
               </option>
             </select>
                       </div>
@@ -1577,7 +1580,7 @@
                         <div class="row">
                           <div class="col-sm-6">
                             <div class="form-group">
-                              <label for=""> First Name</label><input class="form-control" placeholder="First Name" type="text">
+                              <label for="">Cantidad</label><input class="form-control" type="number" placeholder="0" type="text">
                             </div>
                           </div>
                           <div class="col-sm-6">
@@ -1591,26 +1594,14 @@
                             <div class="form-group">
                               <label for=""> Fecha de Ingreso</label>
                               <div class="date-input">
-                                <input class="single-daterange form-control" placeholder="Date of birth" type="text" value="04/12/1978">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="form-group">
-                              <label for="">Twitter Username</label>
-                              <div class="input-group">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text">
-                                    @
-                                  </div>
-                                </div>
-                                <input class="form-control" placeholder="Twitter Username" type="text">
+                                <input class="single-daterange form-control" placeholder="Date of birth" type="text" value="04/12/2018">
                               </div>
                             </div>
                           </div>
                         </div>
+
                         <div class="form-group">
-                          <label> Example textarea</label><textarea class="form-control" rows="3"></textarea>
+                          <label> Descripción Detallada</label><textarea class="form-control" rows="3"></textarea>
                         </div>
                       </fieldset>
                       <div class="form-check">
@@ -1618,6 +1609,10 @@
                       </div>
                       <div class="form-buttons-w">
                         <button class="btn btn-primary" type="submit"> Registrar</button>
+                      </div>
+                      <div class="alert alert-success alert-dismissable">
+                          <button type="button" class="close" display:"none" data-dismiss="alert" aria-hidden="false">&times;</button>
+            Registrado Exitosamente!
                       </div>
                     </form>
                   </div>
