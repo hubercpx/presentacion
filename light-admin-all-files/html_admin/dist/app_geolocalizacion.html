@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Dashboard HTML Template</title>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="template language" name="keywords">
+    <meta content="Tamerlan Soziev" name="author">
+    <meta content="Admin dashboard html template" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">
+    <link href="bower_components/select2/dist/css/select2.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="bower_components/dropzone/dist/dropzone.css" rel="stylesheet">
+    <link href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+    <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
+    <link href="css/main.css?version=4.4.0" rel="stylesheet">
+  </head>
+  <body class="menu-position-side menu-side-left full-screen">
+    <div class="all-wrapper solid-bg-all">
+      <div class="search-with-suggestions-w">
+        <div class="search-with-suggestions-modal">
+          <div class="element-search">
+            <input class="search-suggest-input" placeholder="Escribir para buscar..." type="text">
+              <div class="close-search-suggestions">
+                <i class="os-icon os-icon-x"></i>
+              </div>
+            </input>
+          </div>
+          <div class="search-suggestions-group">
+            <div class="ssg-header">
+              <div class="ssg-icon">
+                <div class="os-icon os-icon-box"></div>
+              </div>
+              <div class="ssg-name">
+                Projects
+              </div>
+              <div class="ssg-info">
+                24 Total
+              </div>
+            </div>
+            <div class="ssg-content">
+              <div class="ssg-items ssg-items-boxed">
+                <a class="ssg-item" href="users_profile_big.html">
+                  <div class="item-media" style="background-image: url(img/company6.png)"></div>
+                  <div class="item-name">
+                    Integ<span>ration</span> with API
+                  </div>
+                </a><a class="ssg-item" href="users_profile_big.html">
+                  <div class="item-media" style="background-image: url(img/company7.png)"></div>
+                  <div class="item-name">
+                    Deve<span>lopm</span>ent Project
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="search-suggestions-group">
+            <div class="ssg-header">
+              <div class="ssg-icon">
+                <div class="os-icon os-icon-users"></div>
+              </div>
+              <div class="ssg-name">
+                Customers
+              </div>
+              <div class="ssg-info">
+                12 Total
+              </div>
+            </div>
+            <div class="ssg-content">
+              <div class="ssg-items ssg-items-list">
+                <a class="ssg-item" href="users_profile_big.html">
+                  <div class="item-media" style="background-image: url(img/avatar1.jpg)"></div>
+                  <div class="item-name">
+                    John Ma<span>yer</span>s
+                  </div>
+                </a><a class="ssg-item" href="users_profile_big.html">
+                  <div class="item-media" style="background-image: url(img/avatar2.jpg)"></div>
+                  <div class="item-name">
+                    Th<span>omas</span> Mullier
+                  </div>
+                </a><a class="ssg-item" href="users_profile_big.html">
+                  <div class="item-media" style="background-image: url(img/avatar3.jpg)"></div>
+                  <div class="item-name">
+                    Kim C<span>olli</span>ns
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="search-suggestions-group">
+            <div class="ssg-header">
+              <div class="ssg-icon">
+                <div class="os-icon os-icon-folder"></div>
+              </div>
+              <div class="ssg-name">
+                Files
+              </div>
+              <div class="ssg-info">
+                17 Total
+              </div>
+            </div>
+            <div class="ssg-content">
+              <div class="ssg-items ssg-items-blocks">
+                <a class="ssg-item" href="#">
+                  <div class="item-icon">
+                    <i class="os-icon os-icon-file-text"></i>
+                  </div>
+                  <div class="item-name">
+                    Work<span>Not</span>e.txt
+                  </div>
+                </a><a class="ssg-item" href="#">
+                  <div class="item-icon">
+                    <i class="os-icon os-icon-film"></i>
+                  </div>
+                  <div class="item-name">
+                    V<span>ideo</span>.avi
+                  </div>
+                </a><a class="ssg-item" href="#">
+                  <div class="item-icon">
+                    <i class="os-icon os-icon-database"></i>
+                  </div>
+                  <div class="item-name">
+                    User<span>Tabl</span>e.sql
+                  </div>
+                </a><a class="ssg-item" href="#">
+                  <div class="item-icon">
+                    <i class="os-icon os-icon-image"></i>
+                  </div>
+                  <div class="item-name">
+                    wed<span>din</span>g.jpg
+                  </div>
+                </a>
+              </div>
+              <div class="ssg-nothing-found">
+                <div class="icon-w">
+                  <i class="os-icon os-icon-eye-off"></i>
+                </div>
+                <span>No files were found. Try changing your query...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-w">
+        <!--------------------
+        START - Mobile Menu
+        -------------------->
+        <div class="menu-mobile menu-activated-on-click color-scheme-dark">
+          <div class="mm-logo-buttons-w">
+            <a class="mm-logo" href="index.html"><img src="img/tigo-logo.png"><span>Tigo Admin</span></a>
+            <div class="mm-buttons">
+              <div class="content-panel-open">
+                <div class="os-icon os-icon-grid-circles"></div>
+              </div>
+              <div class="mobile-menu-trigger">
+                <div class="os-icon os-icon-hamburger-menu-1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-and-user">
+            <div class="logged-user-w">
+              <div class="avatar-w">
+                <img alt="" src="img/avatar1.jpg">
+              </div>
+              <div class="logged-user-info-w">
+                <div class="logged-user-name">
+                  Maria Gomez
+                </div>
+                <div class="logged-user-role">
+                  Administrator
+                </div>
+              </div>
+            </div>
+            <!--------------------
+            START - Mobile Menu List
+            -------------------->
+            <ul class="main-menu">
+              <li class="sub-header">
+                <span>Layouts</span>
+              </li>
+              <li class="selected menu">
+                <a href="index.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-layout"></div>
+                  </div>
+                  <span>Dashboard</span></a>
+              </li>
+              <li class="menu">
+                <a href="app_empleados.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-users"></div>
+                  </div>
+                  <span>Usuarios</span></a>
+              </li>
+              <li class="menu">
+                <a href="app_geolocalizacion.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-users"></div>
+                  </div>
+                  <span>Geolocalización</span></a>
+              </li>
+              <li class="menu">
+                <a href="app_correo.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-send"></div>
+                  </div>
+                  <span>E-mail
+                    </span></a>
+              </li>
+              <li class="menu">
+                <a href="app_chat.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-mail-07"></div>
+                  </div>
+                  <span>Chat Empresarial</span></a>
+              </li>
+              <li class="menu">
+                <a href="app_listadoinventario.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-coins-4"></div>
+                  </div>
+                  <span>Inventario</span></a>
+              </li>
+              <li class="menu">
+                <a href="app_reporte.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-documents-03"></div>
+                  </div>
+                  <span>Reportes</span></a>
+              </li>
+              <li class="menu">
+                <a href="app_localidad.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-documents-03"></div>
+                  </div>
+                  <span>Localidades</span></a>
+              </li>
+              <li class="menu">
+                <a href="app_calendario.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-ui-55"></div>
+                  </div>
+                  <span>Agenda</span></a>
+              </li>
+            </ul>
+            <!--------------------
+            END - Mobile Menu List
+            -------------------->
+            <div class="side-menu-magic">
+              <h4>
+                Tigo Admin
+              </h4>
+              <p>
+                Beta
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--------------------
+        END - Mobile Menu
+        --------------------><!--------------------
+        START - Main Menu
+        -------------------->
+        <div class="menu-w color-scheme-light color-style-transparent menu-position-side menu-side-left menu-layout-compact sub-menu-style-over sub-menu-color-bright selected-menu-color-light menu-activated-on-hover menu-has-selected-link">
+          <div class="logo-w">
+            <div class="mm-logo-buttons-w">
+              <a class="mm-logo" href="index.html"><img height="50px" width="50px" src="img/logo.png">
+                <span class="logo-label">Tigo Admin</span></a>
+            </div>
+          </div>
+          <div class="logged-user-w avatar-inline">
+            <div class="logged-user-i">
+              <div class="avatar-w">
+                <img alt="" src="img/avatar1.jpg">
+              </div>
+              <div class="logged-user-info-w">
+                <div class="logged-user-name">
+                  Maria Gomez
+                </div>
+                <div class="logged-user-role">
+                  Administrator
+                </div>
+              </div>
+              <div class="logged-user-toggler-arrow">
+                <div class="os-icon os-icon-chevron-down"></div>
+              </div>
+              <div class="logged-user-menu color-style-bright">
+                <div class="logged-user-avatar-info">
+                  <div class="avatar-w">
+                    <img alt="" src="img/avatar1.jpg">
+                  </div>
+                  <div class="logged-user-info-w">
+                    <div class="logged-user-name">
+                      Maria Gomez
+                    </div>
+                    <div class="logged-user-role">
+                      Administrator
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-icon">
+                  <i class="os-icon os-icon-wallet-loaded"></i>
+                </div>
+                <ul>
+                  <li>
+                    <a href="apps_email.html"><i class="os-icon os-icon-mail-01"></i><span>Incoming Mail</span></a>
+                  </li>
+                  <li>
+                    <a href="users_profile_big.html"><i class="os-icon os-icon-user-male-circle2"></i><span>Profile Details</span></a>
+                  </li>
+                  <li>
+                    <a href="users_profile_small.html"><i class="os-icon os-icon-coins-4"></i><span>Billing Details</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="os-icon os-icon-others-43"></i><span>Notifications</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="menu-actions">
+            <!--------------------
+            START - Messages Link in secondary top menu
+            -------------------->
+            <div class="messages-notifications os-dropdown-trigger os-dropdown-position-right">
+              <i class="os-icon os-icon-mail-14"></i>
+              <div class="new-messages-count">
+                12
+              </div>
+              <div class="os-dropdown light message-list">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar1.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          John Mayers
+                        </h6>
+                        <h6 class="message-title">
+                          Account Update
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar2.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Phil Jones
+                        </h6>
+                        <h6 class="message-title">
+                          Secutiry Updates
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar3.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Bekky Simpson
+                        </h6>
+                        <h6 class="message-title">
+                          Vacation Rentals
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar4.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Alice Priskon
+                        </h6>
+                        <h6 class="message-title">
+                          Payment Confirmation
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--------------------
+            END - Messages Link in secondary top menu
+            --------------------><!--------------------
+            START - Settings Link in secondary top menu
+            -------------------->
+            <div class="top-icon top-settings os-dropdown-trigger os-dropdown-position-right">
+              <i class="os-icon os-icon-ui-46"></i>
+              <div class="os-dropdown">
+                <div class="icon-w">
+                  <i class="os-icon os-icon-ui-46"></i>
+                </div>
+                <ul>
+                  <li>
+                    <a href="users_profile_small.html"><i class="os-icon os-icon-ui-49"></i><span>Profile Settings</span></a>
+                  </li>
+                  <li>
+                    <a href="users_profile_small.html"><i class="os-icon os-icon-grid-10"></i><span>Billing Info</span></a>
+                  </li>
+                  <li>
+                    <a href="users_profile_small.html"><i class="os-icon os-icon-ui-44"></i><span>My Invoices</span></a>
+                  </li>
+                  <li>
+                    <a href="users_profile_small.html"><i class="os-icon os-icon-ui-15"></i><span>Cancel Account</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--------------------
+            END - Settings Link in secondary top menu
+            --------------------><!--------------------
+            START - Messages Link in secondary top menu
+            -------------------->
+            <div class="messages-notifications os-dropdown-trigger os-dropdown-position-right">
+              <i class="os-icon os-icon-zap"></i>
+              <div class="new-messages-count">
+                4
+              </div>
+              <div class="os-dropdown light message-list">
+                <div class="icon-w">
+                  <i class="os-icon os-icon-zap"></i>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar1.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          John Mayers
+                        </h6>
+                        <h6 class="message-title">
+                          Account Update
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar2.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Phil Jones
+                        </h6>
+                        <h6 class="message-title">
+                          Secutiry Updates
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar3.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Bekky Simpson
+                        </h6>
+                        <h6 class="message-title">
+                          Vacation Rentals
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar4.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Alice Priskon
+                        </h6>
+                        <h6 class="message-title">
+                          Payment Confirmation
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--------------------
+            END - Messages Link in secondary top menu
+            -------------------->
+          </div>
+          <div class="element-search autosuggest-search-activator">
+            <input placeholder="Esribir para buscar..." type="text">
+          </div>
+          <h1 class="menu-page-header">
+            Page Header
+          </h1>
+          <ul class="main-menu">
+            <li class="sub-header">
+              <span>Layouts</span>
+            </li>
+            <li class="selected menu">
+              <a href="index.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-layout"></div>
+                </div>
+                <span>Dashboard</span></a>
+            </li>
+            <li class="menu">
+              <a href="app_empleados.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-users"></div>
+                </div>
+                <span>Usuarios</span></a>
+            </li>
+            <li class="menu">
+              <a href="app_geolocalizacion.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-users"></div>
+                </div>
+                <span>Geolocalización</span></a>
+            </li>
+            <li class="menu">
+              <a href="app_correo.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-send"></div>
+                </div>
+                <span>E-mail
+                  </span></a>
+            </li>
+            <li class="menu">
+              <a href="app_chat.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-mail-07"></div>
+                </div>
+                <span>Chat Empresarial</span></a>
+            </li>
+            <li class="menu">
+              <a href="app_listadoinventario.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-coins-4"></div>
+                </div>
+                <span>Inventario</span></a>
+            </li>
+            <li class="menu">
+              <a href="app_reporte.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-documents-03"></div>
+                </div>
+                <span>Reportes</span></a>
+            </li>
+            <li class="menu">
+              <a href="app_localidad.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-documents-03"></div>
+                </div>
+                <span>Localidades</span></a>
+            </li>
+            <li class="menu">
+              <a href="app_calendario.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-ui-55"></div>
+                </div>
+                <span>Agenda</span></a>
+            </li>
+          </ul>
+          <div class="side-menu-magic">
+            <h4>
+              Tigo Admin
+            </h4>
+            <p>
+              Beta
+            </p>
+          </div>
+        </div>
+        <!--------------------
+        END - Main Menu
+        -------------------->
+        <div class="content-w">
+          <!--------------------
+          START - Top Bar
+          -------------------->
+          <div class="top-bar color-scheme-transparent">
+            <!--------------------
+            START - Top Menu Controls
+            -------------------->
+            <div class="top-menu-controls">
+              <div class="element-search autosuggest-search-activator">
+                <input placeholder="Start typing to search..." type="text">
+              </div>
+              <!--------------------
+              START - Messages Link in secondary top menu
+              -------------------->
+              <div class="messages-notifications os-dropdown-trigger os-dropdown-position-left">
+                <i class="os-icon os-icon-mail-14"></i>
+                <div class="new-messages-count">
+                  12
+                </div>
+                <div class="os-dropdown light message-list">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="user-avatar-w">
+                          <img alt="" src="img/avatar1.jpg">
+                        </div>
+                        <div class="message-content">
+                          <h6 class="message-from">
+                            John Mayers
+                          </h6>
+                          <h6 class="message-title">
+                            Account Update
+                          </h6>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="user-avatar-w">
+                          <img alt="" src="img/avatar2.jpg">
+                        </div>
+                        <div class="message-content">
+                          <h6 class="message-from">
+                            Phil Jones
+                          </h6>
+                          <h6 class="message-title">
+                            Secutiry Updates
+                          </h6>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="user-avatar-w">
+                          <img alt="" src="img/avatar3.jpg">
+                        </div>
+                        <div class="message-content">
+                          <h6 class="message-from">
+                            Bekky Simpson
+                          </h6>
+                          <h6 class="message-title">
+                            Vacation Rentals
+                          </h6>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="user-avatar-w">
+                          <img alt="" src="img/avatar4.jpg">
+                        </div>
+                        <div class="message-content">
+                          <h6 class="message-from">
+                            Alice Priskon
+                          </h6>
+                          <h6 class="message-title">
+                            Payment Confirmation
+                          </h6>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--------------------
+              END - Messages Link in secondary top menu
+              --------------------><!--------------------
+              START - Settings Link in secondary top menu
+              -------------------->
+              <div class="top-icon top-settings os-dropdown-trigger os-dropdown-position-left">
+                <i class="os-icon os-icon-ui-46"></i>
+                <div class="os-dropdown">
+                  <div class="icon-w">
+                    <i class="os-icon os-icon-ui-46"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="users_profile_small.html"><i class="os-icon os-icon-ui-49"></i><span>Profile Settings</span></a>
+                    </li>
+                    <li>
+                      <a href="users_profile_small.html"><i class="os-icon os-icon-grid-10"></i><span>Billing Info</span></a>
+                    </li>
+                    <li>
+                      <a href="users_profile_small.html"><i class="os-icon os-icon-ui-44"></i><span>My Invoices</span></a>
+                    </li>
+                    <li>
+                      <a href="users_profile_small.html"><i class="os-icon os-icon-ui-15"></i><span>Cancel Account</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--------------------
+              END - Settings Link in secondary top menu
+              --------------------><!--------------------
+              START - User avatar and menu in secondary top menu
+              -------------------->
+              <div class="logged-user-w">
+                <div class="logged-user-i">
+                  <div class="avatar-w">
+                    <img alt="" src="img/avatar1.jpg">
+                  </div>
+                  <div class="logged-user-menu color-style-bright">
+                    <div class="logged-user-avatar-info">
+                      <div class="avatar-w">
+                        <img alt="" src="img/avatar1.jpg">
+                      </div>
+                      <div class="logged-user-info-w">
+                        <div class="logged-user-name">
+                          Maria Gomez
+                        </div>
+                        <div class="logged-user-role">
+                          Administrator
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-icon">
+                      <i class="os-icon os-icon-wallet-loaded"></i>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="apps_email.html"><i class="os-icon os-icon-mail-01"></i><span>Incoming Mail</span></a>
+                      </li>
+                      <li>
+                        <a href="users_profile_big.html"><i class="os-icon os-icon-user-male-circle2"></i><span>Profile Details</span></a>
+                      </li>
+                      <li>
+                        <a href="users_profile_small.html"><i class="os-icon os-icon-coins-4"></i><span>Billing Details</span></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="os-icon os-icon-others-43"></i><span>Notifications</span></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--------------------
+              END - User avatar and menu in secondary top menu
+              -------------------->
+            </div>
+            <!--------------------
+            END - Top Menu Controls
+            -------------------->
+          </div>
+          <!--------------------
+          END - Top Bar
+          --------------------><!--------------------
+          START - Breadcrumbs
+          -------------------->
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="index.html">Products</a>
+            </li>
+            <li class="breadcrumb-item">
+              <span>Laptop with retina screen</span>
+            </li>
+          </ul>
+          <!--------------------
+          END - Breadcrumbs
+          -------------------->
+          <div class="content-i">
+            <div class="content-box">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="">Empresa</label>
+                      <select class="form-control" id="select-empresas">
+                        <option value="1">Empresa 1</option>
+                        <option value="2">Empresa 2</option>
+                        <option value="3">Empresa 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="">Fecha</label>
+                    <input type="date" name="" value="" class="form-control">
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col-sm-4 d-xxxl-none">
+                  <div class="element-wrapper">
+                    <h6 class="element-header">
+                      Localizacion
+                    </h6>
+                    <div class="element-box">
+                      <div class="ael-head">
+                      </div>
+                      <ul class="nav nav-tabs">
+                        <li class="nav-item active">
+                          <a  class="nav-link active" data-toggle="tab" href="#empresa">Empleados</a>
+                        </li>
+                        <li class="nav-item">
+                          <a  class="nav-link" data-toggle="tab" href="#tarea">Tareas</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane fade in active" id="empresa">
+                          <div class="ae-list-w">
+                            <ul class="nav nav-tabs">
+                              <li class="nav-item active">
+                                <a style="font-size:65%;" class="nav-link active" data-toggle="tab" href="#activos" id="num-activos">Activos: 2</a>
+                              </li>
+                              <li class="nav-item">
+                                <a  style="font-size:65%;" class="nav-link" data-toggle="tab" href="#no-activos">No activos: 0</a>
+                              </li>
+                            </ul>
+                            <div class="ae-list">
+                              <div class="tab-content">
+                                <div class="tab-pane fade in active" id="activos">
+                                  <div class="users-list-w" id="lista-empleados">
+                                    <div id="empleado1">
+                                      <div class="user-w with-status status-green">
+                                        <div class="user-avatar-w">
+                                          <a href="#" id="emp1">
+                                            <div class="user-avatar">
+                                              <img alt="" src="img/avatar1.jpg">
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <div class="user-name">
+                                          <h6 style="font-size:65%;" class="user-title">
+                                            John Mayers
+                                          </h6>
+                                          <div style="font-size:65%;" class="user-role">
+                                            Reparador
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="empleado2">
+                                      <div class="user-w with-status status-green">
+                                        <div class="user-avatar-w">
+                                          <a href="#" id="emp2">
+                                            <div class="user-avatar">
+                                              <img alt="" src="img/avatar2.jpg">
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <div class="user-name">
+                                          <h6 class="user-title">
+                                            Ben Gossma
+                                          </h6>
+                                          <div class="user-role">
+                                            Reparador
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="empleado3">
+                                      <div class="user-w with-status status-red">
+                                        <div class="user-avatar-w">
+                                          <a href="#" id="emp3">
+                                            <div class="user-avatar">
+                                              <img alt="" src="img/avatar3.jpg">
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <div class="user-name">
+                                          <h6 class="user-title">
+                                            Phil Nokorin
+                                          </h6>
+                                          <div class="user-role">
+                                            HR Manger
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="empleado4">
+                                      <div class="user-w with-status status-green">
+                                        <div class="user-avatar-w">
+                                          <a href="#" id="emp4">
+                                            <div class="user-avatar">
+                                              <img alt="" src="img/avatar4.jpg">
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <div class="user-name">
+                                          <h6 class="user-title">
+                                            Jenny Miksa
+                                          </h6>
+                                          <div class="user-role">
+                                            Lead Developer
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="users-list-w tab-pane fade" id="no-activos">
+                                  <h8>Todos los empleados estan activos</h8>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="tarea">
+                          <div class="ae-list-w">
+                            <ul class="nav nav-tabs">
+                              <li class="nav-item active">
+                                <a  style="font-size:65%;" class="nav-link active" data-toggle="tab" href="#asignado">Asignado: 2</a>
+                              </li>
+                              <li class="nav-item">
+                                <a  style="font-size:65%;" class="nav-link" data-toggle="tab" href="#no-asignado">No asignado: 0</a>
+                              </li>
+                              <li class="nav-item">
+                                <a style="font-size:65%;" class="nav-link" data-toggle="tab" href="#completo">Completado: 0</a>
+                              </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="users-list-w tab-pane fade in active" id="asignado">
+                                    <div class="user-w with-status status-green">
+                                      <div class="user-name">
+                                        <h6 style="font-size:65%;" class="user-title">
+                                          Reparacion torre 1
+                                        </h6>
+                                        <div class="user-role">
+                                          Se necesita reparar la torre 1 por mal funcionamiento
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="user-w with-status status-green">
+                                      <div class="user-name">
+                                        <h6  style="font-size:65%;" class="user-title">
+                                          Reparacion torre 2
+                                        </h6>
+                                        <div class="user-role">
+                                          Se necesita reparar la torre 2 por mal funcionamiento
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="users-list-w tab-pane fade" id="no-asignado">
+                                  <h5 style="font-size:65%;">No hay tareas para asignar</h5>
+
+                                </div>
+                                <div class="users-list-w tab-pane fade" id="completo">
+                                  <h5 style="font-size:65%;">No hay tareas completadas</h5>
+
+                                </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-8 col-xxxl-6">
+                  <div class="element-wrapper">
+                    <h6 class="element-header">
+                      Mapa
+                    </h6>
+                      <div style="height: 500px;" id="mapa1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!--  End Content-->
+
+
+        </div>
+      </div>
+      <div class="display-type"></div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+    <script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+    <script src="bower_components/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+    <script src="bower_components/ckeditor/ckeditor.js"></script>
+    <script src="bower_components/bootstrap-validator/dist/validator.min.js"></script>
+    <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <script src="bower_components/dropzone/dist/dropzone.js"></script>
+    <script src="bower_components/editable-table/mindmup-editabletable.js"></script>
+    <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="bower_components/bootstrap/js/dist/popover.js"></script>
+    <script src="js/demo_customizer.js?version=4.4.0"></script>
+    <script src="js/main.js?version=4.4.0"></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYQEzpo6c96KowjNSIGxp7RRmtwBdS5Ss"></script>
+
+<script type="text/javascript">
+google.maps.event.addDomListener(window, 'load', init);
+
+var mapa;
+var markerEmpresa = [];
+
+//Icono casa
+var iconoTorre = {
+    url: 'img/torre.png',
+    size: new google.maps.Size(45, 45),
+    origin: new google.maps.Point(0, 0),
+    anchor: new google.maps.Point(0, 32),
+    scaledSize: new google.maps.Size(45, 45)
+  };
+
+  function vaciarMarker(){
+    for (var i = 0; i < markerEmpresa.length; i++) {
+      markerEmpresa[i].setMap(null);
+    }
+    markerEmpresa=[];
+  }
+
+  function llenarMarker(tipo){
+
+    if(tipo==1){
+      //Empresa 1;
+      var guatemala1 = {lat: 14.618719, lng: -90.513442};
+      var guatemala2 = {lat: 14.606323, lng: -90.517133};
+
+      var marker1 = new google.maps.Marker({
+        position: guatemala1,
+        map: mapa,
+        animation: google.maps.Animation.DROP,
+        title: 'Empresa1.1'
+      });
+      var marker2 = new google.maps.Marker({
+        position: guatemala2,
+        map: mapa,
+        animation: google.maps.Animation.DROP,
+        title: 'Empresa1.2'
+      });
+
+      markerEmpresa.push(marker1);
+      markerEmpresa.push(marker2);
+    }
+    if(tipo==2){
+      var quetzaltenango1 = {lat: 14.845997, lng: -91.521352};
+
+      var marker1 = new google.maps.Marker({
+        position: quetzaltenango1,
+        map: mapa,
+        animation: google.maps.Animation.DROP,
+        title: 'Empresa2.1'
+      });
+      markerEmpresa.push(marker1);
+    }
+    if(tipo==3){
+      var quetzaltenango1 = {lat: 15.467708, lng: -90.374134};
+
+      var marker1 = new google.maps.Marker({
+        position: quetzaltenango1,
+        map: mapa,
+        animation: google.maps.Animation.DROP,
+        title: 'Empresa2.1'
+      });
+      markerEmpresa.push(marker1);
+    }
+
+  }
+
+
+       var center =  {lat: 15.042878, lng: -90.601907};
+
+       function init() {
+         var mapOptions1 = {
+             zoom: 8,
+             center: new google.maps.LatLng(center),
+             disableDefaultUI: true,
+             zoomControl: true,
+             mapTypeControl: true,
+             scaleControl: true,
+             streetViewControl: true,
+             rotateControl: true,
+             fullscreenControl: true,
+             styles:
+             [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8ec3b9"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1a3646"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.country",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#4b6878"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#64779e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.province",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#4b6878"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.man_made",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#334e87"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#023e58"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#283d6a"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#6f9ba5"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#023e58"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#3C7680"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#304a7d"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#98a5be"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#2c6675"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#255763"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#b0d5ce"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#023e58"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#98a5be"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#283d6a"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#3a4762"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#0e1626"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#4e6d70"
+      }
+    ]
+  }
+]
+}
+
+         var mapElement1 = document.getElementById('mapa1');
+         mapa = new google.maps.Map(mapElement1, mapOptions1);
+
+         var guatemala1 = {lat: 14.618719, lng: -90.513442};
+         var guatemala2 = {lat: 14.606323, lng: -90.517133};
+
+         var marker1 = new google.maps.Marker({
+           position: guatemala1,
+           map: mapa,
+           animation: google.maps.Animation.DROP,
+           title: 'Empresa1.1'
+         });
+         var marker2 = new google.maps.Marker({
+           position: guatemala2,
+           map: mapa,
+           animation: google.maps.Animation.DROP,
+           title: 'Empresa1.2'
+         });
+
+         markerEmpresa.push(marker1);
+         markerEmpresa.push(marker2);
+
+
+         var torre1 = {lat: 14.873234, lng: -91.544958};
+         var torre2 = {lat: 14.603156, lng: -90.537099};
+         var torre3 = {lat: 15.478974, lng: -90.352808};
+
+
+         var marker4 = new google.maps.Marker({
+           position: torre1,
+           map: mapa,
+           icon: iconoTorre,
+           animation: google.maps.Animation.DROP,
+           title: 'Empresa1.2'
+         });
+
+         var marker5 = new google.maps.Marker({
+           position: torre2,
+           map: mapa,
+           icon: iconoTorre,
+           animation: google.maps.Animation.DROP,
+           title: 'Empresa1.2'
+         });
+
+         var marker5 = new google.maps.Marker({
+           position: torre3,
+           map: mapa,
+           icon: iconoTorre,
+           animation: google.maps.Animation.DROP,
+           title: 'Empresa1.2'
+         });
+};
+    </script>
+
+    <script type="text/javascript">
+
+    $('#select-empresas').change(function(){
+      remplaceHtml();
+    });
+
+    function remplaceHtml(){
+      var tipo = $('#select-empresas option:selected').val();
+      var html = "";
+      var num = 0;
+      if(tipo ==1){
+        var html1 =
+        '<div class="user-w with-status status-green">'+
+          '<div class="user-avatar-w">'+
+            '<a href="#" id="emp1">'+
+              '<div class="user-avatar">'+
+                '<img alt="" src="img/avatar1.jpg">'+
+              '</div>'+
+            '</a>'+
+          '</div>'+
+          '<div class="user-name">'+
+            '<h6 style="font-size:65%;" class="user-title">Antonio De leon</h6>'+
+            '<divstyle="font-size:65%;"  class="user-role">Reparador</div>'+
+          '</div>'+
+        '</div>';
+        var html2 =
+        '<div class="user-w with-status status-green">'+
+          '<div class="user-avatar-w">'+
+            '<a href="#" id="emp1">'+
+              '<div class="user-avatar">'+
+                '<img alt="" src="img/avatar2.jpg">'+
+              '</div>'+
+            '</a>'+
+          '</div>'+
+          '<div class="user-name">'+
+            '<h6 style="font-size:65%;" class="user-title">Jose Juan</h6>'+
+            '<div style="font-size:65%;" class="user-role">Reparador</div>'+
+          '</div>'+
+        '</div>';
+        console.log(html2);
+        html = html1 + html2;
+        vaciarMarker();
+        llenarMarker(1);
+        num=2;
+
+      }
+      if(tipo ==2){
+        html =
+        '<div class="user-w with-status status-green">'+
+          '<div class="user-avatar-w">'+
+            '<a href="#" id="emp1">'+
+              '<div class="user-avatar">'+
+                '<img alt="" src="img/avatar3.jpg">'+
+              '</div>'+
+            '</a>'+
+          '</div>'+
+          '<div class="user-name">'+
+            '<h6  style="font-size:65%;" class="user-title">Pedro Lopez</h6>'+
+            '<div style="font-size:65%;" class="user-role">Reparador</div>'+
+          '</div>'+
+        '</div>';
+        vaciarMarker();
+        llenarMarker(2);
+        num=1;
+
+      }
+      if(tipo ==3){
+        html =
+        '<div class="user-w with-status status-green">'+
+          '<div class="user-avatar-w">'+
+            '<a href="#" id="emp1">'+
+              '<div class="user-avatar">'+
+                '<img alt="" src="img/avatar4.jpg">'+
+              '</div>'+
+            '</a>'+
+          '</div>'+
+          '<div class="user-name">'+
+            '<h6 style="font-size:65%;" class="user-title">Alejandra Maldonado</h6>'+
+            '<div style="font-size:65%;" class="user-role">Reparadora</div>'+
+          '</div>'+
+        '</div>';
+        vaciarMarker();
+        llenarMarker(3);
+        num=1;
+
+      }
+      $('#lista-empleados').html(html);
+      $('#num-activos').text('Activos: ' + num);
+    }
+
+    remplaceHtml();
+
+
+    </script>
+  </body>
+</html>
