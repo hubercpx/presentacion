@@ -19,6 +19,7 @@
     <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
     <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
     <link href="css/main.css?version=4.4.0" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
 
   </head>
   <body class="menu-position-side menu-side-left full-screen">
@@ -1460,105 +1461,186 @@
           <div class="content-i">
             <div class="content-box">
               <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="">Empresa</label>
+                      <select class="form-control" id="select-empresas">
+                        <option value="1">Empresa 1</option>
+                        <option value="2">Empresa 2</option>
+                        <option value="3">Empresa 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="">Fecha</label>
+                    <input type="date" name="" value="" class="form-control">
+                  </div>
+                </div>
+              <div class="row">
                 <div class="col-sm-4 d-xxxl-none">
                   <div class="element-wrapper">
                     <h6 class="element-header">
                       Localizacion
                     </h6>
                     <div class="element-box">
-                      <div class="ae-list-w">
-                        <div class="ael-head">
-                          <div class="col-md-10">
-                            <select class="form-control" id="select-empresas">
-                              <option value="1">Empresa 1</option>
-                              <option value="2">Empresa 2</option>
-                              <option value="3">Empresa 3</option>
-                            </select>
-                          </div>
-                          <div class="actions-right">
-                            <a href="#"><i class="os-icon os-icon-ui-30"></i></a>
+                      <div class="ael-head">
+                      </div>
+                      <ul class="nav nav-tabs">
+                        <li class="nav-item active">
+                          <a  class="nav-link active" data-toggle="tab" href="#empresa">Empleados</a>
+                        </li>
+                        <li class="nav-item">
+                          <a  class="nav-link" data-toggle="tab" href="#tarea">Tareas</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane fade in active" id="empresa">
+                          <div class="ae-list-w">
+                            <ul class="nav nav-tabs">
+                              <li class="nav-item active">
+                                <a style="font-size:65%;" class="nav-link active" data-toggle="tab" href="#activos" id="num-activos">Activos: 2</a>
+                              </li>
+                              <li class="nav-item">
+                                <a  style="font-size:65%;" class="nav-link" data-toggle="tab" href="#no-activos">No activos: 0</a>
+                              </li>
+                            </ul>
+                            <div class="ae-list">
+                              <div class="tab-content">
+                                <div class="tab-pane fade in active" id="activos">
+                                  <div class="users-list-w" id="lista-empleados">
+                                    <div id="empleado1">
+                                      <div class="user-w with-status status-green">
+                                        <div class="user-avatar-w">
+                                          <a href="#" id="emp1">
+                                            <div class="user-avatar">
+                                              <img alt="" src="img/avatar1.jpg">
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <div class="user-name">
+                                          <h6 style="font-size:65%;" class="user-title">
+                                            John Mayers
+                                          </h6>
+                                          <div style="font-size:65%;" class="user-role">
+                                            Reparador
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="empleado2">
+                                      <div class="user-w with-status status-green">
+                                        <div class="user-avatar-w">
+                                          <a href="#" id="emp2">
+                                            <div class="user-avatar">
+                                              <img alt="" src="img/avatar2.jpg">
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <div class="user-name">
+                                          <h6 class="user-title">
+                                            Ben Gossma
+                                          </h6>
+                                          <div class="user-role">
+                                            Reparador
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="empleado3">
+                                      <div class="user-w with-status status-red">
+                                        <div class="user-avatar-w">
+                                          <a href="#" id="emp3">
+                                            <div class="user-avatar">
+                                              <img alt="" src="img/avatar3.jpg">
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <div class="user-name">
+                                          <h6 class="user-title">
+                                            Phil Nokorin
+                                          </h6>
+                                          <div class="user-role">
+                                            HR Manger
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="empleado4">
+                                      <div class="user-w with-status status-green">
+                                        <div class="user-avatar-w">
+                                          <a href="#" id="emp4">
+                                            <div class="user-avatar">
+                                              <img alt="" src="img/avatar4.jpg">
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <div class="user-name">
+                                          <h6 class="user-title">
+                                            Jenny Miksa
+                                          </h6>
+                                          <div class="user-role">
+                                            Lead Developer
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="users-list-w tab-pane fade" id="no-activos">
+                                  <h8>Todos los empleados estan activos</h8>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
+                        <div class="tab-pane fade" id="tarea">
+                          <div class="ae-list-w">
+                            <ul class="nav nav-tabs">
+                              <li class="nav-item active">
+                                <a  style="font-size:65%;" class="nav-link active" data-toggle="tab" href="#asignado">Asignado: 2</a>
+                              </li>
+                              <li class="nav-item">
+                                <a  style="font-size:65%;" class="nav-link" data-toggle="tab" href="#no-asignado">No asignado: 0</a>
+                              </li>
+                              <li class="nav-item">
+                                <a style="font-size:65%;" class="nav-link" data-toggle="tab" href="#completo">Completado: 0</a>
+                              </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="users-list-w tab-pane fade in active" id="asignado">
+                                    <div class="user-w with-status status-green">
+                                      <div class="user-name">
+                                        <h6 style="font-size:65%;" class="user-title">
+                                          Reparacion torre 1
+                                        </h6>
+                                        <div class="user-role">
+                                          Se necesita reparar la torre 1 por mal funcionamiento
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="user-w with-status status-green">
+                                      <div class="user-name">
+                                        <h6  style="font-size:65%;" class="user-title">
+                                          Reparacion torre 2
+                                        </h6>
+                                        <div class="user-role">
+                                          Se necesita reparar la torre 2 por mal funcionamiento
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
 
-                        <div class="ae-list">
-                          <div class="users-list-w" id="lista-empleados">
-                            <div id="empleado1">
-                                <div class="user-w with-status status-green">
-                                  <div class="user-avatar-w">
-                                    <a href="#" id="emp1">
-                                      <div class="user-avatar">
-                                        <img alt="" src="img/avatar1.jpg">
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <div class="user-name">
-                                    <h6 class="user-title">
-                                      John Mayers
-                                    </h6>
-                                    <div class="user-role">
-                                      Reparador
-                                    </div>
-                                  </div>
+                                <div class="users-list-w tab-pane fade" id="no-asignado">
+                                  <h5 style="font-size:65%;">No hay tareas para asignar</h5>
+
                                 </div>
-                            </div>
-                            <div id="empleado2">
-                                <div class="user-w with-status status-green">
-                                  <div class="user-avatar-w">
-                                    <a href="#" id="emp2">
-                                      <div class="user-avatar">
-                                        <img alt="" src="img/avatar2.jpg">
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <div class="user-name">
-                                    <h6 class="user-title">
-                                      Ben Gossma
-                                    </h6>
-                                    <div class="user-role">
-                                      Reparador
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                            <div id="empleado3">
-                                <div class="user-w with-status status-red">
-                                  <div class="user-avatar-w">
-                                    <a href="#" id="emp3">
-                                      <div class="user-avatar">
-                                        <img alt="" src="img/avatar3.jpg">
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <div class="user-name">
-                                    <h6 class="user-title">
-                                      Phil Nokorin
-                                    </h6>
-                                    <div class="user-role">
-                                      HR Manger
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                            <div id="empleado4">
-                                <div class="user-w with-status status-green">
-                                  <div class="user-avatar-w">
-                                    <a href="#" id="emp4">
-                                      <div class="user-avatar">
-                                        <img alt="" src="img/avatar4.jpg">
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <div class="user-name">
-                                    <h6 class="user-title">
-                                      Jenny Miksa
-                                    </h6>
-                                    <div class="user-role">
-                                      Lead Developer
-                                    </div>
-                                  </div>
+                                <div class="users-list-w tab-pane fade" id="completo">
+                                  <h5 style="font-size:65%;">No hay tareas completadas</h5>
+
                                 </div>
                             </div>
                           </div>
+
                         </div>
                       </div>
                     </div>
@@ -1622,6 +1704,14 @@ google.maps.event.addDomListener(window, 'load', init);
 var mapa;
 var markerEmpresa = [];
 
+//Icono casa
+var iconoTorre = {
+    url: 'img/torre.png',
+    size: new google.maps.Size(45, 45),
+    origin: new google.maps.Point(0, 0),
+    anchor: new google.maps.Point(0, 32),
+    scaledSize: new google.maps.Size(45, 45)
+  };
 
   function vaciarMarker(){
     for (var i = 0; i < markerEmpresa.length; i++) {
@@ -1949,6 +2039,36 @@ var markerEmpresa = [];
 
          markerEmpresa.push(marker1);
          markerEmpresa.push(marker2);
+
+
+         var torre1 = {lat: 14.873234, lng: -91.544958};
+         var torre2 = {lat: 14.603156, lng: -90.537099};
+         var torre3 = {lat: 15.478974, lng: -90.352808};
+
+
+         var marker4 = new google.maps.Marker({
+           position: torre1,
+           map: mapa,
+           icon: iconoTorre,
+           animation: google.maps.Animation.DROP,
+           title: 'Empresa1.2'
+         });
+
+         var marker5 = new google.maps.Marker({
+           position: torre2,
+           map: mapa,
+           icon: iconoTorre,
+           animation: google.maps.Animation.DROP,
+           title: 'Empresa1.2'
+         });
+
+         var marker5 = new google.maps.Marker({
+           position: torre3,
+           map: mapa,
+           icon: iconoTorre,
+           animation: google.maps.Animation.DROP,
+           title: 'Empresa1.2'
+         });
 };
     </script>
 
@@ -1961,6 +2081,7 @@ var markerEmpresa = [];
     function remplaceHtml(){
       var tipo = $('#select-empresas option:selected').val();
       var html = "";
+      var num = 0;
       if(tipo ==1){
         var html1 =
         '<div class="user-w with-status status-green">'+
@@ -1972,8 +2093,8 @@ var markerEmpresa = [];
             '</a>'+
           '</div>'+
           '<div class="user-name">'+
-            '<h6 class="user-title">Antonio De leon</h6>'+
-            '<div class="user-role">Reparador</div>'+
+            '<h6 style="font-size:65%;" class="user-title">Antonio De leon</h6>'+
+            '<divstyle="font-size:65%;"  class="user-role">Reparador</div>'+
           '</div>'+
         '</div>';
         var html2 =
@@ -1986,14 +2107,15 @@ var markerEmpresa = [];
             '</a>'+
           '</div>'+
           '<div class="user-name">'+
-            '<h6 class="user-title">Jose Juan</h6>'+
-            '<div class="user-role">Reparador</div>'+
+            '<h6 style="font-size:65%;" class="user-title">Jose Juan</h6>'+
+            '<div style="font-size:65%;" class="user-role">Reparador</div>'+
           '</div>'+
         '</div>';
         console.log(html2);
         html = html1 + html2;
         vaciarMarker();
         llenarMarker(1);
+        num=2;
 
       }
       if(tipo ==2){
@@ -2007,13 +2129,13 @@ var markerEmpresa = [];
             '</a>'+
           '</div>'+
           '<div class="user-name">'+
-            '<h6 class="user-title">Pedro Lopez</h6>'+
-            '<div class="user-role">Reparador</div>'+
+            '<h6  style="font-size:65%;" class="user-title">Pedro Lopez</h6>'+
+            '<div style="font-size:65%;" class="user-role">Reparador</div>'+
           '</div>'+
         '</div>';
         vaciarMarker();
         llenarMarker(2);
-
+        num=1;
 
       }
       if(tipo ==3){
@@ -2027,15 +2149,17 @@ var markerEmpresa = [];
             '</a>'+
           '</div>'+
           '<div class="user-name">'+
-            '<h6 class="user-title">Alejandra Maldonado</h6>'+
-            '<div class="user-role">Reparadora</div>'+
+            '<h6 style="font-size:65%;" class="user-title">Alejandra Maldonado</h6>'+
+            '<div style="font-size:65%;" class="user-role">Reparadora</div>'+
           '</div>'+
         '</div>';
         vaciarMarker();
         llenarMarker(3);
+        num=1;
 
       }
       $('#lista-empleados').html(html);
+      $('#num-activos').text('Activos: ' + num);
     }
 
     remplaceHtml();
