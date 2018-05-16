@@ -20,6 +20,9 @@
   <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
   <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
   <link href="css/main.css?version=4.4.0" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
 <body class="menu-position-side menu-side-left full-screen">
@@ -1585,7 +1588,7 @@
                           </div>
                           <div class="col-sm-6">
                             <div class="form-group">
-                              <label for="">Last Name</label><input class="form-control" placeholder="Last Name" type="text">
+                              <label for="">Anexo</label><input class="form-control" placeholder="Anexo" type="text">
                             </div>
                           </div>
                         </div>
@@ -1599,13 +1602,7 @@
                             </div>
                           </div>
                         </div>
-<<<<<<< HEAD
 
-=======
-                            <div class="alert alert-success alert-dismissable">
-                              <strong>Well done! </strong>Registrado Exitosamente.
-                            </div>
->>>>>>> ee48874f0af932f807e882c7f2b7901f8044d91d
                         <div class="form-group">
                           <label> Descripción Detallada</label><textarea class="form-control" rows="3"></textarea>
                         </div>
@@ -1613,13 +1610,19 @@
                       <div class="form-check">
                         <label class="form-check-label"><input class="form-check-input" type="checkbox">Habilitado</label>
                       </div>
-                      <div class="form-buttons-w">
-                        <button class="btn btn-primary" type="submit"> Registrar</button>
+                      <!-- <div class="form-buttons-w">
+                        <button class="btn btn-primary"  type="submit"> Registrar</button>
+                      </div> -->
+                      <div class="container">
+                        <div class="span10"><button class="btn">Registrar</button></div>
+                          <div class="span4 pull-right">
+                            <div class="alert alert-danger fade">
+                              <button type="button" class="close" data-dismiss="alert">×</button>
+                              <strong>Alert!</strong> Registrado Exitosamente
+                            </div>
+                          </div>
                       </div>
-                      <div class="alert alert-success alert-dismissable">
-                          <button type="button" class="close" style="display: none;" "data-dismiss="alert" aria-hidden="true">&times;</button>
-            Registrado Exitosamente!
-                      </div>
+
                     </form>
                   </div>
                 </div>
@@ -1849,6 +1852,12 @@
     </div>
     <div class="display-type"></div>
   </div>
+  <script>
+  $(".btn").on("click", function() {
+    $(".alert").removeClass("in").show();
+	$(".alert").delay(200).addClass("in").fadeOut(2000);
+});
+  </script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
   <script src="bower_components/moment/moment.js"></script>
