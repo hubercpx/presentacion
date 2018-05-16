@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<html><head>
     <title>Admin Dashboard HTML Template</title>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
@@ -19,9 +17,11 @@
     <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
     <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
     <link href="css/main.css?version=4.4.0" rel="stylesheet">
-  </head>
-  <body class="menu-position-side menu-side-left">
-    <div class="all-wrapper no-padding-content solid-bg-all">
+    <link href="icon_fonts_assets/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style>.cke{visibility:hidden;}</style></head>
+  <body class="menu-position-side menu-side-left full-screen">
+    <div class="all-wrapper solid-bg-all">
       <div class="search-with-suggestions-w">
         <div class="search-with-suggestions-modal">
           <div class="element-search">
@@ -29,7 +29,7 @@
               <div class="close-search-suggestions">
                 <i class="os-icon os-icon-x"></i>
               </div>
-            </input>
+
           </div>
           <div class="search-suggestions-group">
             <div class="ssg-header">
@@ -544,7 +544,7 @@
         --------------------><!--------------------
         START - Main Menu
         -------------------->
-        <div class="menu-w color-scheme-dark color-style-bright menu-position-side menu-side-left menu-layout-mini sub-menu-style-over sub-menu-color-bright selected-menu-color-light menu-activated-on-hover menu-has-selected-link">
+        <div class="menu-w color-scheme-light color-style-transparent menu-position-side menu-side-left menu-layout-compact sub-menu-style-over sub-menu-color-bright selected-menu-color-light menu-activated-on-hover menu-has-selected-link">
           <div class="logo-w">
             <a class="logo" href="index.html">
               <div class="logo-element"></div>
@@ -605,6 +605,192 @@
                 </ul>
               </div>
             </div>
+          </div>
+          <div class="menu-actions">
+            <!--------------------
+            START - Messages Link in secondary top menu
+            -------------------->
+            <div class="messages-notifications os-dropdown-trigger os-dropdown-position-right">
+              <i class="os-icon os-icon-mail-14"></i>
+              <div class="new-messages-count">
+                12
+              </div>
+              <div class="os-dropdown light message-list">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar1.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          John Mayers
+                        </h6>
+                        <h6 class="message-title">
+                          Account Update
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar2.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Phil Jones
+                        </h6>
+                        <h6 class="message-title">
+                          Secutiry Updates
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar3.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Bekky Simpson
+                        </h6>
+                        <h6 class="message-title">
+                          Vacation Rentals
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar4.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Alice Priskon
+                        </h6>
+                        <h6 class="message-title">
+                          Payment Confirmation
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--------------------
+            END - Messages Link in secondary top menu
+            --------------------><!--------------------
+            START - Settings Link in secondary top menu
+            -------------------->
+            <div class="top-icon top-settings os-dropdown-trigger os-dropdown-position-right">
+              <i class="os-icon os-icon-ui-46"></i>
+              <div class="os-dropdown">
+                <div class="icon-w">
+                  <i class="os-icon os-icon-ui-46"></i>
+                </div>
+                <ul>
+                  <li>
+                    <a href="users_profile_small.html"><i class="os-icon os-icon-ui-49"></i><span>Profile Settings</span></a>
+                  </li>
+                  <li>
+                    <a href="users_profile_small.html"><i class="os-icon os-icon-grid-10"></i><span>Billing Info</span></a>
+                  </li>
+                  <li>
+                    <a href="users_profile_small.html"><i class="os-icon os-icon-ui-44"></i><span>My Invoices</span></a>
+                  </li>
+                  <li>
+                    <a href="users_profile_small.html"><i class="os-icon os-icon-ui-15"></i><span>Cancel Account</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--------------------
+            END - Settings Link in secondary top menu
+            --------------------><!--------------------
+            START - Messages Link in secondary top menu
+            -------------------->
+            <div class="messages-notifications os-dropdown-trigger os-dropdown-position-right">
+              <i class="os-icon os-icon-zap"></i>
+              <div class="new-messages-count">
+                4
+              </div>
+              <div class="os-dropdown light message-list">
+                <div class="icon-w">
+                  <i class="os-icon os-icon-zap"></i>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar1.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          John Mayers
+                        </h6>
+                        <h6 class="message-title">
+                          Account Update
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar2.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Phil Jones
+                        </h6>
+                        <h6 class="message-title">
+                          Secutiry Updates
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar3.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Bekky Simpson
+                        </h6>
+                        <h6 class="message-title">
+                          Vacation Rentals
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="user-avatar-w">
+                        <img alt="" src="img/avatar4.jpg">
+                      </div>
+                      <div class="message-content">
+                        <h6 class="message-from">
+                          Alice Priskon
+                        </h6>
+                        <h6 class="message-title">
+                          Payment Confirmation
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--------------------
+            END - Messages Link in secondary top menu
+            -------------------->
+          </div>
+          <div class="element-search autosuggest-search-activator">
+            <input placeholder="Start typing to search..." type="text">
           </div>
           <h1 class="menu-page-header">
             Page Header
@@ -1255,242 +1441,250 @@
           END - Top Bar
           -------------------->
           <div class="content-i">
-            <div class="content-box">
+            <div class="">
               <div class="full-chat-w">
                 <div class="full-chat-i">
                   <div class="full-chat-left">
                     <div class="os-tabs-w">
                       <ul class="nav nav-tabs upper centered">
                         <li class="nav-item">
-                          <a class="nav-link active" data-toggle="tab" href="#tab_overview"><i class="os-icon os-icon-mail-14"></i><span>Chats</span></a>
+                          <a class="nav-link active" data-toggle="tab" href="#tab_overview"><i class="os-icon os-icon-mail-14"></i><span>Empleados</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" data-toggle="tab" href="#tab_sales"><i class="os-icon os-icon-ui-93"></i><span>Contacts</span></a>
+                          <a class="nav-link" data-toggle="tab" href="#tab_sales"><i class="os-icon os-icon-ui-93"></i><span>Contratas</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" data-toggle="tab" href="#tab_sales"><i class="os-icon os-icon-ui-02"></i><span>Favorites</span></a>
+                          <a class="nav-link" data-toggle="tab" href="#tab_sales"><i class="os-icon os-icon-ui-02"></i><span>Favoritos</span></a>
                         </li>
                       </ul>
                     </div>
                     <div class="chat-search">
                       <div class="element-search">
-                        <input placeholder="Search users by name..." type="text">
+                        <input placeholder="Buscar..." type="text">
                       </div>
                     </div>
                     <div class="user-list">
-                      <div class="user-w">
+                      <div class="user-w active">
                         <div class="avatar with-status status-green">
-                          <img alt="" src="img/avatar1.jpg">
+                          <img alt="" src="img/empleados.png">
                         </div>
                         <div class="user-info">
                           <div class="user-date">
-                            12 min
+                            42
                           </div>
                           <div class="user-name">
-                            John Mayers
-                          </div>
-                          <div class="last-message">
-                            What is going on, are we...
+                            <a href="app_empleados.html"> Empleados</a>
                           </div>
                         </div>
                       </div>
-                      <div class="user-w">
+                      <div class="user-w active">
                         <div class="avatar with-status status-green">
-                          <img alt="" src="img/avatar2.jpg">
+                          <img alt="" src="img/contratas.png">
                         </div>
                         <div class="user-info">
                           <div class="user-date">
-                            2 hours
+                            97
                           </div>
                           <div class="user-name">
-                            Bill Railey
-                          </div>
-                          <div class="last-message">
-                            Yes, I&#39;ve sent you details...
-                          </div>
-                        </div>
-                      </div>
-                      <div class="user-w">
-                        <div class="avatar with-status status-green">
-                          <img alt="" src="img/avatar3.jpg">
-                        </div>
-                        <div class="user-info">
-                          <div class="user-date">
-                            24 min
-                          </div>
-                          <div class="user-name">
-                            Simon Backs
-                          </div>
-                          <div class="last-message">
-                            What is going on, are we...
-                          </div>
-                        </div>
-                      </div>
-                      <div class="user-w">
-                        <div class="avatar with-status status-green">
-                          <img alt="" src="img/avatar1.jpg">
-                        </div>
-                        <div class="user-info">
-                          <div class="user-date">
-                            7 min
-                          </div>
-                          <div class="user-name">
-                            Kelley Brooks
-                          </div>
-                          <div class="last-message">
-                            Can you send me this...
-                          </div>
-                        </div>
-                      </div>
-                      <div class="user-w">
-                        <div class="avatar with-status status-green">
-                          <img alt="" src="img/avatar7.jpg">
-                        </div>
-                        <div class="user-info">
-                          <div class="user-date">
-                            4 hours
-                          </div>
-                          <div class="user-name">
-                            Vinie Jones
-                          </div>
-                          <div class="last-message">
-                            What is going on, are we...
-                          </div>
-                        </div>
-                      </div>
-                      <div class="user-w">
-                        <div class="avatar with-status status-green">
-                          <img alt="" src="img/avatar1.jpg">
-                        </div>
-                        <div class="user-info">
-                          <div class="user-date">
-                            2 days
-                          </div>
-                          <div class="user-name">
-                            Brad Pitt
-                          </div>
-                          <div class="last-message">
-                            They have submitted users...
+                            <a href="app_contratas.html"> Contratas</a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="full-chat-middle">
-                    <div class="chat-head">
-                      <div class="user-info">
-                        <span>To:</span><a href="#">John Mayers</a>
+                    <div class="">
+                      <div class="element-wrapper">
+                <h6 class="element-header">
+                  Empresas que instalan inventario
+                </h6>
+                <div class="element-box-tp">
+                  <div class="content-panel">
+                  <div class="profile-tile">
+                    <a class="profile-tile-box" href="users_profile_small.html">
+                      <div class="pt-avatar-w">
+                        <img alt="" src="img/empresa.png">
                       </div>
-                      <div class="user-actions">
-                        <a href="#"><i class="os-icon os-icon-mail-07"></i></a><a href="#"><i class="os-icon os-icon-phone-18"></i></a><a href="#"><i class="os-icon os-icon-phone-15"></i></a>
+                      <div class="pt-user-name">
+                        John Mayers
                       </div>
-                    </div>
-                    <div class="chat-content-w">
-                      <div class="chat-content">
-                        <div class="chat-message">
-                          <div class="chat-message-content-w">
-                            <div class="chat-message-content">
-                              Hi, my name is Mike, I will be happy to assist you
-                            </div>
-                          </div>
-                          <div class="chat-message-avatar">
-                            <img alt="" src="img/avatar3.jpg">
-                          </div>
-                          <div class="chat-message-date">
-                            9:12am
-                          </div>
-                        </div>
-                        <div class="chat-date-separator">
-                          <span>Yesterday</span>
-                        </div>
-                        <div class="chat-message self">
-                          <div class="chat-message-content-w">
-                            <div class="chat-message-content">
-                              That walls over which the drawers. Gone studies to titles have audiences of and concepts was motivator
-                            </div>
-                          </div>
-                          <div class="chat-message-date">
-                            1:23pm
-                          </div>
-                          <div class="chat-message-avatar">
-                            <img alt="" src="img/avatar1.jpg">
-                          </div>
-                        </div>
-                        <div class="chat-message">
-                          <div class="chat-message-content-w">
-                            <div class="chat-message-content">
-                              Slept train nearby a its is design size agreeable. And check cons, but countries the was to such any founding company
-                            </div>
-                          </div>
-                          <div class="chat-message-avatar">
-                            <img alt="" src="img/avatar3.jpg">
-                          </div>
-                          <div class="chat-message-date">
-                            3:45am
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-controls">
-                      <div class="chat-input">
-                        <input placeholder="Type your message here..." type="text">
-                      </div>
-                      <div class="chat-input-extra">
-                        <div class="chat-extra-actions">
-                          <a href="#"><i class="os-icon os-icon-mail-07"></i></a><a href="#"><i class="os-icon os-icon-phone-18"></i></a><a href="#"><i class="os-icon os-icon-phone-15"></i></a>
-                        </div>
-                        <div class="chat-btn">
-                          <a class="btn btn-primary btn-sm" href="#">Reply</a>
-                        </div>
+                    </a>
+                    <div class="profile-tile-meta">
+                      <ul>
+                        <li>
+                          Ultima instalación Login:<strong>hace 14 minutos</strong>
+                        </li>
+                        <li>
+                          Instalaciones:<strong><a href="apps_support_index.html">1154</a></strong>
+                        </li>
+                        <li>
+                          Empleados:<strong>42</strong>
+                        </li>
+                      </ul>
+                      <div class="pt-btn">
+                        <a class="btn btn-success btn-sm" href="apps_full_chat.html">Solicitar Instalación</a>
                       </div>
                     </div>
                   </div>
-                  <div class="full-chat-right">
-                    <div class="user-intro">
-                      <div class="avatar">
-                        <img alt="" src="img/avatar1.jpg">
+                  <div class="profile-tile">
+                    <a class="profile-tile-box" href="users_profile_small.html">
+                      <div class="pt-avatar-w">
+                        <img alt="" src="img/empresa.png">
                       </div>
-                      <div class="user-intro-info">
-                        <h5 class="user-name">
-                          John Mayers
-                        </h5>
-                        <div class="user-sub">
-                          San Francisco, CA
-                        </div>
-                        <div class="user-social">
-                          <a href="#"><i class="os-icon os-icon-twitter"></i></a><a href="#"><i class="os-icon os-icon-facebook"></i></a>
-                        </div>
+                      <div class="pt-user-name">
+                        A GENERATIVA SL
                       </div>
-                    </div>
-                    <div class="chat-info-section">
-                      <div class="ci-header">
-                        <i class="os-icon os-icon-documents-03"></i><span>Shared Files</span>
-                      </div>
-                      <div class="ci-content">
-                        <div class="ci-file-list">
-                          <ul>
-                            <li>
-                              <a href="#">Annual Revenue.pdf</a>
-                            </li>
-                            <li>
-                              <a href="#">Expenses.xls</a>
-                            </li>
-                            <li>
-                              <a href="#">Business Plan.doc</a>
-                            </li>
-                          </ul>
-                        </div>
+                    </a>
+                    <div class="profile-tile-meta">
+                      <ul>
+                        <li>
+                          Ultima instalación Login:<strong>hace 30 minutos</strong>
+                        </li>
+                        <li>
+                          Instalaciones:<strong><a href="apps_support_index.html">154</a></strong>
+                        </li>
+                        <li>
+                          Empleados:<strong>31</strong>
+                        </li>
+                      </ul>
+                      <div class="pt-btn">
+                        <a class="btn btn-success btn-sm" href="apps_full_chat.html">Solicitar Instalación</a>
                       </div>
                     </div>
-                    <div class="chat-info-section">
-                      <div class="ci-header">
-                        <i class="os-icon os-icon-documents-07"></i><span>Shared Photos</span>
+                  </div>
+                  <div class="profile-tile">
+                    <a class="profile-tile-box" href="users_profile_small.html">
+                      <div class="pt-avatar-w">
+                        <img alt="" src="img/empresa.png">
                       </div>
-                      <div class="ci-content">
-                        <div class="ci-photos-list">
-                          <img alt="" src="img/portfolio9.jpg"><img alt="" src="img/portfolio2.jpg"><img alt="" src="img/portfolio12.jpg"><img alt="" src="img/portfolio14.jpg">
-                        </div>
+                      <div class="pt-user-name">
+                        Nike
                       </div>
+                    </a>
+                    <div class="profile-tile-meta">
+                      <ul>
+                        <li>
+                          Ultima instalación Login:<strong>hace 1 minutos</strong>
+                        </li>
+                        <li>
+                          Instalaciones:<strong><a href="apps_support_index.html">2001</a></strong>
+                        </li>
+                        <li>
+                          Empleados:<strong>63</strong>
+                        </li>
+                      </ul>
+                      <div class="pt-btn">
+                        <a class="btn btn-success btn-sm" href="apps_full_chat.html">Solicitar Instalación</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-tile">
+                    <a class="profile-tile-box" href="users_profile_small.html">
+                      <div class="pt-avatar-w">
+                        <img alt="" src="img/empresa.png">
+                      </div>
+                      <div class="pt-user-name">
+                        Ferrer
+                      </div>
+                    </a>
+                    <div class="profile-tile-meta">
+                      <ul>
+                        <li>
+                          Ultima instalación Login:<strong>hace 22 minutos</strong>
+                        </li>
+                        <li>
+                          Instalaciones:<strong><a href="apps_support_index.html">705</a></strong>
+                        </li>
+                        <li>
+                          Empleados:<strong>45</strong>
+                        </li>
+                      </ul>
+                      <div class="pt-btn">
+                        <a class="btn btn-success btn-sm" href="apps_full_chat.html">Solicitar Instalación</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-tile">
+                    <a class="profile-tile-box" href="users_profile_small.html">
+                      <div class="pt-avatar-w">
+                        <img alt="" src="img/empresa.png">
+                      </div>
+                      <div class="pt-user-name">
+                        Myn
+                      </div>
+                    </a>
+                    <div class="profile-tile-meta">
+                      <ul>
+                        <li>
+                          Ultima instalación Login:<strong>hace 4 minutos</strong>
+                        </li>
+                        <li>
+                          Instalaciones:<strong><a href="apps_support_index.html">1204</a></strong>
+                        </li>
+                        <li>
+                          Empleados:<strong>42</strong>
+                        </li>
+                      </ul>
+                      <div class="pt-btn">
+                        <a class="btn btn-success btn-sm" href="apps_full_chat.html">Solicitar Instalación</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-tile">
+                    <a class="profile-tile-box" href="users_profile_small.html">
+                      <div class="pt-avatar-w">
+                        <img alt="" src="img/empresa.png">
+                      </div>
+                      <div class="pt-user-name">
+                        progreso
+                      </div>
+                    </a>
+                    <div class="profile-tile-meta">
+                      <ul>
+                        <li>
+                          Ultima instalación Login:<strong>hace 2 minutos</strong>
+                        </li>
+                        <li>
+                          Instalaciones:<strong><a href="apps_support_index.html">3048</a></strong>
+                        </li>
+                        <li>
+                          Empleados:<strong>78</strong>
+                        </li>
+                      </ul>
+                      <div class="pt-btn">
+                        <a class="btn btn-success btn-sm" href="apps_full_chat.html">Solicitar Instalación</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-tile">
+                    <a class="profile-tile-box" href="users_profile_small.html">
+                      <div class="pt-avatar-w">
+                        <img alt="" src="img/empresa.png">
+                      </div>
+                      <div class="pt-user-name">
+                        John Mayers
+                      </div>
+                    </a>
+                    <div class="profile-tile-meta">
+                      <ul>
+                        <li>
+                          Ultima instalación Login:<strong>hace 14 minutos</strong>
+                        </li>
+                        <li>
+                          Instalaciones:<strong><a href="apps_support_index.html">1154</a></strong>
+                        </li>
+                        <li>
+                          Empleados:<strong>42</strong>
+                        </li>
+                      </ul>
+                      <div class="pt-btn">
+                        <a class="btn btn-success btn-sm" href="apps_full_chat.html">Solicitar Instalación</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
                     </div>
                   </div>
                 </div>
@@ -1552,7 +1746,7 @@
                           </option>
                         </select>
                       </div>
-                      <div class="fcp-field with-image-selector-w">
+                      <div class="fcp-field with-image-selector-w" style="display: none;">
                         <label for="">With Image</label><select class="with-image-selector">
                           <option value="yes">
                             Yes
@@ -1639,10 +1833,10 @@
                       <div class="fcp-field">
                         <label for="">Top Bar Color</label>
                         <div class="fcp-colors">
-                          <div class="color-selector top-bar-color-selector color-bright selected"></div>
+                          <div class="color-selector top-bar-color-selector color-bright"></div>
                           <div class="color-selector top-bar-color-selector color-dark"></div>
                           <div class="color-selector top-bar-color-selector color-light"></div>
-                          <div class="color-selector top-bar-color-selector color-transparent"></div>
+                          <div class="color-selector top-bar-color-selector color-transparent selected"></div>
                         </div>
                       </div>
                     </div>
@@ -1679,7 +1873,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="chat-messages">
+                  <div class="chat-messages ps ps--theme_default" data-ps-id="19de38d2-d166-40dc-d161-4485e1810d90">
                     <div class="message">
                       <div class="message-content">
                         Hi, how can I help you?
@@ -1698,7 +1892,7 @@
                         Hi, I tried ordering this product and it keeps showing me error code.
                       </div>
                     </div>
-                  </div>
+                  <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
                   <div class="chat-controls">
                     <input class="message-input" placeholder="Type your message here..." type="text">
                     <div class="chat-extra">
@@ -1716,7 +1910,7 @@
       </div>
       <div class="display-type"></div>
     </div>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
     <script src="bower_components/moment/moment.js"></script>
     <script src="bower_components/chart.js/dist/Chart.min.js"></script>
@@ -1755,5 +1949,6 @@
       ga('create', 'UA-XXXXXXX-9', 'auto');
       ga('send', 'pageview');
     </script>
-  </body>
-</html>
+
+
+</body></html>
